@@ -33,6 +33,16 @@ namespace Devoir2_TraderActions
         Dictionary<string, List<ActionAchetee>> dico;
         List<ActionReelle> lesActionsReelles;
 
+        public void montantDuPortefeuille()
+        {
+            double montantPorteFeuille = 0;
+            foreach (ActionAchetee a in dico[lvTraders.SelectedItem.ToString()])
+            {
+                montantPorteFeuille += Convert.ToInt32(a.Quantite) * a.PrixAchat;
+            }
+            txtMontantPorteFeuille.Text = montantPorteFeuille.ToString();
+        }
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             dico = new Dictionary<string, List<ActionAchetee>>();
@@ -258,12 +268,7 @@ namespace Devoir2_TraderActions
                     lvActionsAchetees.ItemsSource = null;
                     lvActionsAchetees.ItemsSource = dico[lvTraders.SelectedItem.ToString()];
 
-                    double montantPorteFeuille = 0;
-                    foreach(ActionAchetee a in dico[lvTraders.SelectedItem.ToString()])
-                    {
-                        montantPorteFeuille += Convert.ToInt32(a.Quantite) * a.PrixAchat;
-                    }
-                    txtMontantPorteFeuille.Text = montantPorteFeuille.ToString();
+                    montantDuPortefeuille();
                 }
             }
         }
@@ -329,12 +334,7 @@ namespace Devoir2_TraderActions
                         lvActionsAchetees.ItemsSource = null;
                         lvActionsAchetees.ItemsSource = dico[lvTraders.SelectedItem.ToString()];
 
-                        double montantPorteFeuille = 0;
-                        foreach (ActionAchetee a in dico[lvTraders.SelectedItem.ToString()])
-                        {
-                            montantPorteFeuille += Convert.ToInt32(a.Quantite) * a.PrixAchat;
-                        }
-                        txtMontantPorteFeuille.Text = montantPorteFeuille.ToString();
+                        montantDuPortefeuille();
 
                         txtPrixAchatAchat.Text = "";
                         txtQteAchat.Text = "";
@@ -381,12 +381,7 @@ namespace Devoir2_TraderActions
                     lvActionsAchetees.ItemsSource = null;
                     lvActionsAchetees.ItemsSource = dico[lvTraders.SelectedItem.ToString()];
 
-                    double montantPorteFeuille = 0;
-                    foreach (ActionAchetee a in dico[lvTraders.SelectedItem.ToString()])
-                    {
-                        montantPorteFeuille += Convert.ToInt32(a.Quantite) * a.PrixAchat;
-                    }
-                    txtMontantPorteFeuille.Text = montantPorteFeuille.ToString();
+                    montantDuPortefeuille();
 
                     txtQteVendueAction.Text = "";
                 }
