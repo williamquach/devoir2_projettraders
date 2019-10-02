@@ -10,7 +10,7 @@
     Loaded="Page_Loaded">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="332" FontSize="35" FontWeight="Bold"><Run Text="Gestion "/><Run Text="P"/><Run Text="orteF"/><Run Text="e"/><Run Text="uille"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="332" FontSize="35" FontWeight="Bold" Foreground="#FFF9A116"><Run Text="Gestion "/><Run Text="P"/><Run Text="orteF"/><Run Text="e"/><Run Text="uille"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="36,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="184" FontSize="20" FontWeight="Normal" Text="Liste des traders"/>
         <TextBlock HorizontalAlignment="Left" Margin="442,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="184" FontSize="20" FontWeight="Normal" RenderTransformOrigin="0.685,0.546"><Run Text="Liste des "/><Run Text="actions"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="1000,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="184" FontSize="20" FontWeight="Normal" Text="Achat"/>
@@ -51,16 +51,16 @@
         <TextBlock HorizontalAlignment="Left" Margin="1260,121,0,0" Text="Nom de l'action" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNomAction" HorizontalAlignment="Left" Margin="1260,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="230" IsEnabled="False" FontSize="12"/>
         <TextBlock HorizontalAlignment="Left" Margin="1260,280,0,0" Text="Quantité achetée" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtQteAcheteeAction" HorizontalAlignment="Left" Margin="1260,298,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="230" IsEnabled="False" FontSize="12"/>
+        <TextBox x:Name="txtQteAcheteeAction" HorizontalAlignment="Left" Margin="1260,298,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="230" IsEnabled="False" FontSize="12"/>
         <TextBlock HorizontalAlignment="Left" Margin="1260,226,0,0" Text="Prix achat" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPrixAchatAction" HorizontalAlignment="Left" Margin="1260,245,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="230" IsEnabled="False" FontSize="12"/>
         <TextBlock HorizontalAlignment="Left" Margin="1260,173,0,0" Text="Valeur de l'action" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox x:Name="txtValeurAction" HorizontalAlignment="Left" Margin="1260,191,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="230" IsEnabled="False" FontSize="12"/>
         <TextBlock HorizontalAlignment="Left" Margin="1258,330,0,0" Text="Quantité vendue" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtQteVendueAction" HorizontalAlignment="Left" Margin="1258,348,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="230" FontSize="12"/>
-        <Button x:Name="btnVendreAction" Content="Vendre" Margin="1316,393,0,0" VerticalAlignment="Top" Width="118" Click="btnVendreAction_Click"/>
+        <TextBox Background="PaleVioletRed" x:Name="txtQteVendueAction" HorizontalAlignment="Left" Margin="1258,348,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="230" FontSize="12"/>
+        <Button x:Name="btnVendreAction" Content="Vendre" Margin="1316,390,0,0" VerticalAlignment="Top" Width="118" Click="btnVendreAction_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="411,548,0,0" Text="Montant du portefeuille" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtMontantPorteFeuille" HorizontalAlignment="Left" Margin="399,566,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="230" IsEnabled="False" FontSize="11"/>
+        <TextBox Background="SandyBrown" x:Name="txtMontantPorteFeuille" HorizontalAlignment="Left" Margin="399,566,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="230" IsEnabled="False" FontSize="11"/>
         <TextBlock HorizontalAlignment="Left" Margin="998,573,0,0" Text="Quantité" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox Background="Bisque" x:Name="txtQteAchat" HorizontalAlignment="Left" Margin="911,589,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="230" FontSize="12"/>
         <TextBlock HorizontalAlignment="Left" Margin="995,516,0,0" Text="Prix achat" TextWrapping="Wrap" VerticalAlignment="Top"/>
